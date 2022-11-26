@@ -2,7 +2,8 @@
   "scripts": {
     "scss": "node-sass src/styles.scss build/styles.css",
     "ts": "tsc --noEmit && tsup",
-    "build": "yarn run scss && yarn run ts"
+    "build": "yarn run scss && yarn run ts",
+    "watch": "tsup --watch"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.40.0",
