@@ -38,4 +38,4 @@ npm run build
 
 <br>
 
-Open `build/index.html` in browser
+Open `index.html` in browser
