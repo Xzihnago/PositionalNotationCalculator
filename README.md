@@ -30,12 +30,10 @@ npm i
 Build css and js:
 ```shell
 yarn run build
-yarn run scss
 ```
 or
 ```shell
 npm run build
-npm run scss
 ```
 
 <br>
