@@ -1,6 +1,6 @@
 @charset "utf8";
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
 // Variables
 $background-primary: rgba(40, 40, 40, 1);
@@ -11,9 +11,31 @@ $button-primary: transparent;
 $button-primary-hover: rgba(100, 100, 100, 1);
 $border-primary: rgba(200, 200, 200, 1);
 
-$font-body: 'Noto Sans TC', sans-serif;
+$font-body: 'Noto Sans Mono', 'monospace', 'Noto Sans TC', sans-serif;
+$font-monospace: 'Noto Sans Mono', 'monospace';
 
 // Global styles
+* {
+  font-family: $font-body;
+
+  &.monospace {
+    font-family: $font-monospace;
+  }
+
+  &.border {
+    background-color: $background-secondary;
+    border: 1px solid $border-primary;
+  }
+
+  &.rounded {
+    border-radius: 5px;
+  }
+
+  &.highlight {
+    background-color: $background-highlight;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -51,21 +73,6 @@ p {
   padding: 0.5rem;
   background-color: transparent;
   background-image: none;
-}
-
-* {
-  &.border {
-    background-color: $background-secondary;
-    border: 1px solid $border-primary;
-  }
-
-  &.rounded {
-    border-radius: 5px;
-  }
-
-  &.highlight {
-    background-color: $background-highlight;
-  }
 }
 
 // Custom items
