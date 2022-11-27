@@ -5,6 +5,6 @@ export default defineConfig({
   outDir: 'build',
   clean: false,
   sourcemap: false,
-  minify: false,
+  minify: true,
   treeshake: true
 })
